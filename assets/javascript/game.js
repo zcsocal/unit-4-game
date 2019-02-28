@@ -9,7 +9,7 @@ $(document).ready(function() {
     //Array of different gem images
     var gemPics = ["assets/images/bluegem.jpg", "assets/images/yellowgem.jpg", "assets/images/greengem.jpg", "assets/images/pinkgem.jpg"] 
     
-    //Assigning random number to each gem
+    //Display gems and assign a random number to each gem
     function gemValues() {
 
         for (var i = 0; i < gemPics.length; i++) {
@@ -37,7 +37,7 @@ $(document).ready(function() {
             
 
         //And displays it on the browser
-        $(".number-to-guess").text("Number you must match: " + targetNumber);
+        $(".number-to-guess").html("<h2>Number you must match: " + targetNumber + "</h2>");
             // console.log(targetNumber);
 
 
